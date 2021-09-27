@@ -1,0 +1,149 @@
+{
+    "version": "v2",
+    "intents": 
+    {
+      "yes": 
+      {
+        "includes": [
+          "yes",
+          "correct",
+          "sure",
+          "right",
+          "go ahead",
+          "yep",
+          "I confirm",
+          "confirmed",
+          "I do",
+          "yeah",
+          "that's right"
+        ],
+        "excludes": [
+        ]
+        
+      },
+      "no": {
+        "includes": [
+          "no",
+          "definitely not",
+          "wrong",
+          "incorrect",
+          "I do not",
+          "I don't"
+        ]
+      },
+
+      "repeat": 
+      {
+          "includes": [
+              "repeat please",
+              "sorry can you say it again",
+              "Can you repeat please",
+              "I dont understand",
+              "can you repeat",
+              "repeat"
+          ]
+      },
+
+      "acknowledge": 
+      {
+          "includes": [
+              "I acknowledge the incident",
+              "I can acknowledge the incident",
+              "I do acknowledge the incident",
+              "acknowledge",
+              "acknowledge please",
+              "incident acknowledged"
+          ],
+          "excludes":
+          [ 
+            "hello"
+          ]
+      }, 
+      
+      "resolve": 
+      {
+          "includes": [
+              "I've resolved the incident",
+              "Incident resolution confirmed",
+              "I have resolved the incident",
+              "Incident resolved",
+              "result",
+              "resolved"
+          ]
+      },
+
+      "status": 
+      {
+          "includes": [
+              "What is the status of (kubernetes)[statusentity]",
+              "Dasha, what's the status of (kubernetes)[statusentity] and (TLS)[statusentity]",
+              "What's the status of (kubernetes)[statusentity]",
+              "Tell me about the status (healthcheck)[statusentity]",
+              "Give me an update on the status of (healthcheck)[statusentity]",
+              "Status (healthcheck)[statusentity] and (TLS)[statusentity]", 
+              "Dasha, let's look at the status of (TLS)[statusentity]"
+          ]
+      },
+      
+      "ignore": 
+      {
+          "includes": [
+              "ignore it",
+              "Nothing, I don't want to do anything",
+              "Nothing",
+              "Forget about it"
+          ]
+      },
+
+      "oops": 
+      {
+          "includes": [
+              "oops",
+              "Whoops",
+              "Oh crap",
+              "Oh no"
+          ]
+      },
+
+      "wait": 
+      {
+          "includes": [
+              "Hold on for a minute",
+              "Wait please",
+              "Give me a second ",
+              "Give me a minute",
+              "Hold on",
+              "Hold on I need to have a look",
+              "Hold the line",
+              "Wait please"
+          ]
+      }
+    },
+
+    "entities": 
+    {
+      "statusentity": 
+      {
+        "open_set": false,
+        "values": [
+          {
+            "value": "kubernetes",
+            "synonyms": ["Kubernetes cluster", "cooper netease", "kubernetes", "Kubernetes instances", "for burnett", "Kubernetes deploy"]
+          },
+          {
+            "value": "TLS",
+            "synonyms": ["SSL", "TLS/SSL", "TLS certificate", "certificate", "SSL certificate"]
+          },
+          {
+            "value": "healthcheck",
+            "synonyms": [ "site healthchecks", "health check ", "site health checks", "health checks"]
+          }
+        ],
+       "includes": [ 
+
+        ]
+      }
+    }
+
+}
+  
