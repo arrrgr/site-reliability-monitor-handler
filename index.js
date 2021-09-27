@@ -14,7 +14,7 @@ require('dotenv').config();
 
 hook.get('/', (req, res) => {
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World. Server running on port ' + PORT + '. Listening for incidents on http://1543a913a2c7.ngrok.io As soon as incident is identified, I will initiate a call from Dasha AI to ackgnowledge or address the incident.  ');
+  res.end('Hello World. Server running on port ' + PORT + '. Listening for incidents. As soon as incident is identified, I will initiate a call from Dasha AI.  ');
 })
 
 hook.use(bodyParser.json());
